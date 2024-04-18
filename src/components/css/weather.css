@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img1.wallspic.com/crops/7/2/7/3/7/173727/173727-karersee-las_coniferas-montaje_de_escenografia-lago_de_origen_glaciar-naturaleza-3840x2160.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1024px) and (max-height: 740px) {
+    body {
+        background-size: auto; /* Cambia el tamaño de la imagen a auto */
+    }
+}
+.weather__container{
+    width: 70%;
+    height: auto;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 15px;
+    padding: 1em;
+    background: rgba(255, 255, 255, 0.571);
+    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.521);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: none;
+}
+.weather__items{
+    border: none;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}
