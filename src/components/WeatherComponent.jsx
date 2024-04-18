@@ -7,7 +7,7 @@ function WeatherComponent() {
   
   return (
     <div>
-      {!loading ? (
+      {loading ? (
         <p>Cargando...</p>
       ):(
         <div className='weather__container'>
