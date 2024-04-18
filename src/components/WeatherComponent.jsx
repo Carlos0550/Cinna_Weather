@@ -3,13 +3,10 @@ import { useUserData } from './context/context';
 import "./css/weather.css";
 
 function WeatherComponent() {
-  const { weather, loading } = useUserData();
+  const { weather } = useUserData();
   
   return (
     <div>
-      {loading ? (
-        <p>Cargando...</p>
-      ):(
         <div className='weather__container'>
           <h1 className='weather__title'>Cinnamon Weather</h1>
           {weather && (
@@ -22,7 +19,6 @@ function WeatherComponent() {
             </>
           )}
         </div>
-      )}
     </div>
   );
 }

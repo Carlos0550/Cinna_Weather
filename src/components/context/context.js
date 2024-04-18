@@ -14,7 +14,6 @@ export const useUserData = () => {
 export const UserContextProvider = ({children}) => {
     const [weather, setWeather] = useState(null)
     const [location, setLocation] = useState(null)
-    const [loading, setLoading] = useState(null)
     const API_KEY = process.env.REACT_APP_API_KEY;
   
     useEffect(() => {
@@ -37,7 +36,7 @@ export const UserContextProvider = ({children}) => {
     }, []);
   
     useEffect(() => {
-      setLoading(true)
+      
       
       setTimeout(() => {
         if (location) {
@@ -47,12 +46,12 @@ export const UserContextProvider = ({children}) => {
             .catch(error => console.error("Error obteniendo el clima: ", error));
         }
       }, 1000);
-      setLoading(false)
+      
     }, [location, API_KEY]);
 
 
     return(
-        <UserContext.Provider value={{weather, loading}}>
+        <UserContext.Provider value={{weather}}>
             {children}
         </UserContext.Provider>
     )
