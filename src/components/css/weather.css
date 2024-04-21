@@ -36,3 +36,45 @@ body{
     font-size: 1.5em;
     font-weight: bold;
 }
+.weather-form {
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  
+  .weather-label {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .weather-input {
+    display: block;
+    padding: 8px;
+    margin: 0.5em;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+  }
+  
+  .weather-button {
+    padding: 0.5em;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .weather-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  .weather-button:active {
+  transform: scale(0.95);
+  }
+  
